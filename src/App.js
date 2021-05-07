@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import './App.sass';
+import CovidBar from './components/CovidBar';
+import NavBar from './components/NavBar';
+import MainContent from './components/MainContent';
+import SecondaryContent from './components/SecondaryContent';
+import Footer from './components/Footer';
+import LegalFooter from './components/LegalFooter';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <CovidBar/>
+      <MainContent />
+      <SecondaryContent/>
+      <Footer/>
+      <LegalFooter/>
     </div>
   );
 }
